@@ -33,9 +33,9 @@ def generate_report(google_findings, github_findings):
         </tbody>
     </table>
 
-    <p> Immediate attention required: {immediate} risks </p>
-    <p> Findings that should be monitored: {monitor} risks </p>
-    <p> Number of informational risks: {informational} </p>
+    <p>  {immediate} findings require immediate attention (Critical and High) </p>
+    <p> {monitor} findings should be monitored (Medium and Low) </p>
+    <p> {informational} informational findings logged for awareness </p>
     '''
 
 
