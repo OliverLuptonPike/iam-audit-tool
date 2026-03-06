@@ -1,0 +1,80 @@
+
+    <html>
+        <head>
+            <style>
+            .Critical  { background-color: #ff4444; color: white; }
+            .High      { background-color: #ff8800; color: white; }
+            .Medium    { background-color: #ffcc00; }
+            .Low       { background-color: #88cc00; }
+            .Informational { background-color: #aaaaaa; }
+            body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+            h2 { color: #333; }
+            p { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 30px; background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+            th { background-color: #333; color: white; padding: 12px; text-align: left; }
+            td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+            tr:hover { opacity: 0.9; }
+
+            </style>
+        </head>
+            <body>
+                
+    <h2> Executive Summary</h2>
+    <p> Total identities audited: 15</p>
+
+    <table> 
+        <thead>
+            <tr>
+                <th>Risk level</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="Critical"><td>Critical</td><td>3</td></tr>
+            <tr class="High"><td>High</td><td>4</td></tr>
+            <tr class="Medium"><td>Medium</td><td>2</td></tr>
+            <tr class="Low"><td>Low</td><td>0</td></tr>
+            <tr class="Informational"><td>Informational</td><td>6</td></tr>
+        </tbody>
+    </table>
+
+    <p> Immediate attention required: 7 risks </p>
+    <p> Findings that should be monitored: 2 risks </p>
+    <p> Number of informational risks: 6 </p>
+    
+
+                <h2> Google WorkSpace Audit</h2>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Identity</th>
+                        <th>Role</th>
+                        <th>Risk Level</th>
+                        <th>Risk Types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr class="Critical"><td>admin@midshire.co.uk</td><td>Admin</td><td>Critical</td><td>Inactive Account ADMIN ACCOUNT, Admin Account with No MFA enabled</td></tr><tr class="Critical"><td>ghost.admin@midshire.co.uk</td><td>Admin</td><td>Critical</td><td>ADMIN ACCOUNT Never Logged In, Admin Account with No MFA enabled</td></tr><tr class="High"><td>jane.doe@midshire.co.uk</td><td>User</td><td>High</td><td>Inactive Account</td></tr><tr class="High"><td>ghost.user@midshire.co.uk</td><td>User</td><td>High</td><td>Never Logged In, User account with No MFA enabled</td></tr><tr class="High"><td>no.mfa@midshire.co.uk</td><td>User</td><td>High</td><td>User account with No MFA enabled</td></tr><tr class="Informational"><td>suspended.admin@midshire.co.uk</td><td>Admin</td><td>Informational</td><td>Admin Account is suspended</td></tr><tr class="Informational"><td>healthy.user@midshire.co.uk</td><td>User</td><td>Informational</td><td>No issues found</td></tr>
+
+                    </tbody>
+                </table>
+
+                <h2> GitHub Audit</h2>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Identity</th>
+                        <th>Role</th>
+                        <th>Risk Level</th>
+                        <th>Risk Types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="Critical"><td>admin</td><td>owner</td><td>Critical</td><td>OWNER Account MFA Disabled, Owner Account</td></tr><tr class="High"><td>member2</td><td>member</td><td>High</td><td>USER Account MFA Disabled</td></tr><tr class="Medium"><td>Colaborator1</td><td>Outside Collaborator</td><td>Medium</td><td>Collaborator Account</td></tr><tr class="Medium"><td>public-website</td><td>Repository</td><td>Medium</td><td>Public Repository</td></tr><tr class="Informational"><td>IT_Manager</td><td>owner</td><td>Informational</td><td>Owner Account</td></tr><tr class="Informational"><td>BOTAccount</td><td>member</td><td>Informational</td><td>Bot Account</td></tr><tr class="Informational"><td>jane_doe</td><td>member</td><td>Informational</td><td>No issues found</td></tr><tr class="Informational"><td>internal-tooling</td><td>Repository</td><td>Informational</td><td>No issues found</td></tr>
+                    </tbody>
+                </table>
+                
+            </body>
+    </html>
+    
